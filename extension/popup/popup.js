@@ -68,7 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
         summaryText.textContent = data.summary || 'No summary';
         summaryBox.style.display = 'block';
       } catch (e) {
-        alert('Error contacting summary server: ' + e);
+        console.log('Error contacting server',e)
+        alert('Failed to contact summary server');
       } finally {
         summarizeBtn.disabled = false;
         summarizeBtn.textContent = 'Summarize (server)';
