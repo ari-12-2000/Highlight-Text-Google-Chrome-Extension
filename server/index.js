@@ -66,5 +66,5 @@ ${texts.join("\n\n")}
 });
 
 app.listen(PORT, () =>
-  console.log(`Gemini proxy running on http://localhost:${PORT}`)
+  console.log(`Gemini proxy running on ${process.env.PORT}`)
 );

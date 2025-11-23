@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const clearAllBtn = document.getElementById('clearAllBtn');
   const summaryBox = document.getElementById('summaryBox');
   const summaryText = document.getElementById('summaryText');
+  const BASE_URL= 'https://highlight-text-google-chrome-extension.onrender.com'
 
   function renderList(items) {
     if (!items || items.length === 0) {
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       summarizeBtn.textContent = 'Summarizing...';
       try {
         // Change URL to your server if different
-        const resp = await fetch('http://localhost:3001/api/summarize', {
+        const resp = await fetch(`http://localhost:3001/${BASE_URL}/summarize`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ texts: hs.map(h => h.quote) })
