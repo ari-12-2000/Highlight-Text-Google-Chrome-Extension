@@ -1,0 +1,16 @@
+/* contentStyles.css */
+.highlight-saver-bubble {
+  position: absolute;
+  z-index: 2147483647;
+  background: #111827;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  user-select: none;
+}
+.highlighted-text {
+  background: rgba(255,235,59,0.6);
+  transition: background 0.2s;
+}

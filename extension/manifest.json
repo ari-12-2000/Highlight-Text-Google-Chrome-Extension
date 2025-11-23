@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Website Highlight Saver",
+  "version": "1.2",
+  "description": "Highlight text on any page and save highlights locally.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_popup": "popup/index.html", "default_icon": { "128": "icon-128.png" }},
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    { "matches": ["<all_urls>"], "js": ["contentScript.js"], "css": ["contentStyles.css"] }
+  ]
+}

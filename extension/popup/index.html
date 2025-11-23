@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Highlights</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Saved Highlights</h1>
+
+    <div id="list" class="list">Loading...</div>
+
+    <div class="controls">
+      <button id="summarizeBtn">Summarize (server)</button>
+      <button id="clearAllBtn">Clear All</button>
+    </div>
+
+    <div id="summaryBox" class="summary" style="display:none;">
+      <h3>Summary</h3>
+      <div id="summaryText"></div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

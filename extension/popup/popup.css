@@ -1,0 +1,14 @@
+/* popup.css */
+:root { --bg: #fff; --muted: #666; }
+
+body { margin:0; font-family: system-ui, Arial; background: var(--bg); color: #111; }
+.container { width: 380px; padding: 12px; }
+h1 { font-size: 18px; margin: 0 0 8px 0; }
+.list { max-height: 300px; overflow-y: auto; margin-bottom: 8px; }
+.item { border: 1px solid #eee; padding: 8px; border-radius: 6px; margin-bottom: 8px; }
+.item .meta { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.item .actions { margin-top: 8px; display:flex; gap:8px; }
+button { padding:6px 10px; border-radius:6px; border:1px solid #ccc; background:#fff; cursor:pointer; }
+.controls { display:flex; gap:8px; margin-bottom: 8px; }
+.summary { padding:8px; background:#f7f7f8; border-radius:6px; }
+.screenshot img { width:100%; margin-top:8px; border-radius:6px; }
