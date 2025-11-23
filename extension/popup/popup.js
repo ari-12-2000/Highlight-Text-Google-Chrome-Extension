@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       summarizeBtn.textContent = 'Summarizing...';
       try {
         // Change URL to your server if different
-        const resp = await fetch(`${BASE_URL}/summarize`, {
+        const resp = await fetch(`${BASE_URL}/api/summarize`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ texts: hs.map(h => h.quote) })
